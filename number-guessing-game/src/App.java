@@ -4,7 +4,7 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         //instantiate the game class
-        game game = new game();
+        Game game = new Game();
         boolean gameOver = false;
         System.out.println(game.welcomeMessage());
         System.out.println(game.difficultyMessage());
@@ -18,7 +18,7 @@ public class App {
         game.setDifficulty(difficulty);
 
         game.selectedDifficultyMessage();
-
+        System.out.println(game.toString());
         //game.getNumberToGuess();
         while (!gameOver) {
             System.out.println("Enter your guess: ");

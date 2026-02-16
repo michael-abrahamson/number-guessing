@@ -1,9 +1,9 @@
-public class game {
+public class Game {
     private int difficulty;
     private int numberToGuess;
     private int guessAttempts;
 
-    public game() {
+    public Game() {
         this.numberToGuess = (int) (Math.random() * 100) + 1;
     }
 
@@ -65,6 +65,11 @@ public class game {
 
     public void getNumberToGuess() {
         System.out.println("The number to guess is: " + this.numberToGuess);
+    }
+
+    @Override
+    public String toString() {
+        return "Game{" + this.difficulty + " difficulty, " + this.guessAttempts + " attempts left " + this.numberToGuess + " number to guess}";
     }
 
 }
